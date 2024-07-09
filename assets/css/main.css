@@ -1693,6 +1693,20 @@ input[type=radio] + label:before {
 .image.main img {
   width: 100%;
 }
+.image.center {
+  display: block;
+  margin: 0 auto 3em auto;
+  width: 100%;
+  width: 100%;
+}
+@media screen and (min-width: 737px) {
+  .image.center {
+    max-width: 60%;
+  }
+}
+.image.center img {
+  width: 100%;
+}
 
 a.image {
   overflow: hidden;
@@ -1708,6 +1722,25 @@ a.image:hover img {
   -webkit-transform: scale(1.075);
   -ms-transform: scale(1.075);
   transform: scale(1.075);
+}
+
+div.two-column-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+div.two-column-wrapper .image {
+  display: block;
+  margin: 0 0 3em 0;
+  width: 100%;
+}
+@media screen and (min-width: 737px) {
+  div.two-column-wrapper .image {
+    width: 48%;
+  }
+}
+div.two-column-wrapper .image img {
+  width: 100%;
 }
 
 /* List */

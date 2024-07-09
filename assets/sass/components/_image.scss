@@ -57,6 +57,21 @@
 				width: 100%;
 			}
 		}
+		
+		&.center {
+			display: block;
+			margin: 0 auto (_size(element-margin) * 1.5) auto;
+			width: 100%;
+			width: 100%;
+			@include breakpoint('>=medium') {
+				max-width: 60%;
+			}
+			
+			img {
+				width: 100%;
+			}
+		}
+		
 	}
 
 	a.image {
@@ -69,6 +84,25 @@
 		&:hover {
 			img {
 				@include vendor('transform', 'scale(1.075)');
+			}
+		}
+	}
+
+	div.two-column-wrapper{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		
+		.image {
+			display: block;
+			margin: 0 0 (_size(element-margin) * 1.5) 0;
+			width: 100%;
+			@include breakpoint('>=medium') {
+				width: 48%;
+			}
+			
+			img {
+				width: 100%;
 			}
 		}
 	}

@@ -246,7 +246,7 @@
 				$this.on('click', function(event) {
 
 					// Prevent default.
-						event.preventDefault();
+						// event.preventDefault();
 
 					// Toggle.
 						$menu_openers.not($this).removeClass('active');
@@ -258,5 +258,17 @@
 				});
 
 			});
+
+		// open current entry
+		var currentFile = window.location.pathname.split("/").pop();
+		$('#menu a').each(function() {
+			if ($(this).attr('href') === currentFile) {
+				if ($(this).parent().is('span')) {
+					$(this).parent().addClass('active');
+				}else if ($(this).parent().parent().siblings().first().is('span')) {
+					$(this).parent().parent().siblings().first().addClass('active');
+				}
+			}
+		});
 
 })(jQuery);
