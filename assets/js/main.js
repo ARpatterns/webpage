@@ -264,6 +264,7 @@
 		var currentFile = window.location.pathname.split("/").pop();
 		$('#menu a').each(function() {
 			if ($(this).attr('href') === currentFile) {
+				$(this).addClass('active');
 				if ($(this).parent().is('span')) {
 					$(this).parent().addClass('active');
 				}else if ($(this).parent().parent().siblings().first().is('span')) {
