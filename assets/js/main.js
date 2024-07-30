@@ -194,7 +194,8 @@
 
 						// Calculate positions.
 							x = Math.max(sh - wh, 0);
-							y = Math.max(0, $window.scrollTop() - x);
+							header_img_height = $('#header-img').height() || 0;
+							y = Math.max(0, $window.scrollTop() - x - header_img_height);
 
 						// Lock/unlock.
 							if ($sidebar_inner.data('locked') == 1) {

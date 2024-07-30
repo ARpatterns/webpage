@@ -2976,4 +2976,13 @@ button:disabled,
   border-top: 0;
   margin-top: 0;
   padding-top: 0;
+}
+
+#header-img {
+  display: flex;
+  justify-content: center;
+}
+#header-img img {
+  width: 100%;
+  max-width: 130em;
 }/*# sourceMappingURL=main.css.map */
