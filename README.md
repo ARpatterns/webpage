@@ -12,3 +12,6 @@ Steps:
 ## Structure
 
 TBD
+
+
+## Contribution Guidelines
