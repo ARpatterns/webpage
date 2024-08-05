@@ -1,5 +1,7 @@
 # Community Page for AR Patterns
 
+## TODOS:
+
 
 ## Run Locally
 
