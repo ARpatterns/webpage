@@ -2986,3 +2986,40 @@ button:disabled,
   width: 100%;
   max-width: 130em;
 }/*# sourceMappingURL=main.css.map */
+
+
+.news ul {
+  list-style: none;
+  padding: 0;
+}
+
+.news {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.news-item img {
+  max-width: 40px;
+  margin-right: 10px; /* Adjusted for space between the image and the link */
+  aspect-ratio: 1;
+}
+
+.news-item a {
+  margin-right: 10px; /* Space between the link and the paragraph */
+  text-decoration: none;
+}
+
+.news-item p {
+  margin: 0; /* To remove default margin of paragraph */
+}
+
+.news-item {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2px; /* Adds a few pixels of space between elements */
+}
