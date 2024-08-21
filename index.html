@@ -10,10 +10,18 @@
 	<body class="is-preload">
 
 		<!-- Header Image -->
-		<div id="header-img">
-			<img src="/webpage/images/header.png" alt="" />
-		</div>
 		<!-- Wrapper -->
+
+		<div class="banner-container">
+			<div class="banner-text">Welcome to AR Patterns</div>
+			<div class="banner-decoration">
+				<!-- SVG Background Pattern -->
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+					<path fill="#e63946" fill-opacity="1" d="M0,96L48,122.7C96,149,192,203,288,218.7C384,235,480,213,576,186.7C672,160,768,128,864,112C960,96,1056,96,1152,122.7C1248,149,1344,203,1392,229.3L1440,256L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+				</svg>
+			</div>
+		</div>
+	
 		<div id="wrapper">
 
 			<!-- Main -->
@@ -55,35 +63,160 @@
 						<h2>What are AR patterns?</h2>
 						<p>AR patterns encompass high-level design patterns covering fundamental concepts for crafting immersive AR experiences. AR patterns serve as a valuable means of communicating proven, reusable solutions to recurring design problems encountered during AR development. A list of AR patterns is collected in a public catalog, including technical as well as User Experience (UX) aspects. AR pattern diagrams foster a consistent presentation and technology-agnostic docu- mentation of AR design patterns. The AR patterns in the catalog are illustrated by text descrip- tions, visuals of spatial scenarios, pattern diagrams and UI examples. Additionally AR patterns may be examplified by platform-specific source code samples.</p>
 						
-						<h2>Featured scenarios</h2>
+						<h2>Featured Platforms</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>
-						<span class="image main">
-							<img src="webpage/images/pic08.jpg" alt="" />
-						</span>
-						<div class="two-column-wrapper">
-							<span class="image">
-								<img src="webpage/images/pic08.jpg" alt="" />
-							</span>
-							<span class="image">
-								<img src="webpage/images/pic08.jpg" alt="" />
-							</span>
+						<div class="slideshow-container">
+							<div class="mySlides fade">
+							  <div class="numbertext">1 / 3</div>
+							  <img src="/webpage/images/pic01.jpg" style="width:100%">
+							  <div class="text">Caption Text</div>
+							</div>
+						  
+							<div class="mySlides fade">
+							  <div class="numbertext">2 / 3</div>
+							  <img src="/webpage/images/pic02.jpg" style="width:100%">
+							  <div class="text">Caption Two</div>
+							</div>
+						  
+							<div class="mySlides fade">
+							  <div class="numbertext">3 / 3</div>
+							  <img src="/webpage/images/pic03.jpg" style="width:100%">
+							  <div class="text">Caption Three</div>
+							</div>
+							<!-- Next and previous buttons -->
+							<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+						</div>
+						  
+						<!-- Dots/bullets/indicators -->
+						<div style="text-align:center">
+							<span class="dot" onclick="currentSlide(1, 1)"></span>
+							<span class="dot" onclick="currentSlide(2, 1)"></span>
+							<span class="dot" onclick="currentSlide(3, 1)"></span>
 						</div>
 
 						<h2>Categories of AR patterns</h2>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>
-						<div class="two-column-wrapper">
-							<span class="image">
-								<img src="webpage/images/pic08.jpg" alt="" />
-								<p>Augmentation Patterns</p>
-							</span>
-							<span class="image">
-								<img src="webpage/images/pic08.jpg" alt="" />
-								<p>Behavioral Patterns</p>
-							</span>
-							<span class="image">
-								<img src="webpage/images/pic08.jpg" alt="" />
-								<p>Interaction Patterns</p>
-							</span>
+						<p>
+							Explore the introduced AR patterns and apply them in your AR projects. 
+							Each pattern is described in detail and illustrated with examples.
+						</p>
+						<div class="slideshow-container">
+
+							<div class="mySlides2 fade">
+								<div class="numbertext">1 / 12</div>
+								<a href="/webpage/augmentation-patterns/anchored-supplement-pattern/anchored-supplement-pattern.html">
+									<img src="/webpage/augmentation-patterns/anchored-supplement-pattern/images/5.0 Achored Supplement@2x.png" style="width:100%">
+								</a>
+								<div class="text">Anchored Supplement Pattern</div>
+							</div>
+							
+							<div class="mySlides2 fade">
+								<div class="numbertext">2 / 12</div>
+								<a href="/webpage/augmentation-patterns/geolocated-remark-pattern/geolocated-remark-pattern.html">
+									<img src="/webpage/augmentation-patterns/geolocated-remark-pattern/images/1.1 Geolocated Remark@2x.png" style="width:100%">
+								</a>
+								<div class="text">Geolocated Remark Pattern</div>
+							</div>
+							
+							<div class="mySlides2 fade">
+								<div class="numbertext">3 / 12</div>
+								<a href="/webpage/augmentation-patterns/area-enrichment-pattern/area-enrichment-pattern.html">
+									<img src="/webpage/augmentation-patterns/area-enrichment-pattern/images/3.0 Area Enrichment@2x.png" style="width:100%">
+								</a>
+								<div class="text">Area Enrichment Pattern</div>
+							</div>
+							
+							<div class="mySlides2 fade">
+								<div class="numbertext">4 / 12</div>
+								<a href="/webpage/augmentation-patterns/staged-progression-pattern/staged-progression-pattern.html">
+									<img src="/webpage/augmentation-patterns/staged-progression-pattern/images/11.0 Staged Progression@2x.png" style="width:100%">
+								</a>
+								<div class="text">Staged Progression Pattern</div>
+							</div>
+							
+							<div class="mySlides2 fade">
+								<div class="numbertext">5 / 12</div>
+								<a href="/webpage/augmentation-patterns/captured-twin-pattern/captured-twin-pattern.html">
+									<img src="/webpage/augmentation-patterns/captured-twin-pattern/images/4.0 Captured Twin@2x.png" style="width:100%">
+								</a>
+								<div class="text">Captured Twin Pattern</div>
+							</div>
+							
+							<div class="mySlides2 fade">
+								<div class="numbertext">6 / 12</div>
+								<a href="/webpage/augmentation-patterns/hand-palm-pop-up-pattern/hand-palm-pop-up-pattern.html">
+									<img src="/webpage/augmentation-patterns/hand-palm-pop-up-pattern/images/8.1 Hand@2x.png" style="width:100%">
+								</a>
+								<div class="text">Hand Palm Pop Up Pattern</div>
+							</div>
+							
+							<div class="mySlides2 fade">
+								<div class="numbertext">7 / 12</div>
+								<a href="/webpage/augmentation-patterns/tag-along-pattern/tag-along-pattern.html">
+									<img src="/webpage/augmentation-patterns/tag-along-pattern/images/7.0 Tag Along@2x.png" style="width:100%">
+								</a>
+								<div class="text">Tag Along Pattern</div>
+							</div>
+							
+							<div class="mySlides2 fade">
+								<div class="numbertext">8 / 12</div>
+								<a href="/webpage/augmentation-patterns/attention-director-pattern/attention-director-pattern.html">
+									<img src="/webpage/augmentation-patterns/attention-director-pattern/images/12.0 Attention Director@2x.png" style="width:100%">
+								</a>
+								<div class="text">Attention Director Pattern</div>
+							</div>
+							
+							<div class="mySlides2 fade">
+								<div class="numbertext">9 / 12</div>
+								<a href="/webpage/augmentation-patterns/superimposition-pattern/superimposition-pattern.html">
+									<img src="/webpage/augmentation-patterns/superimposition-pattern/images/6.0 Superimposition@2x.png" style="width:100%">
+								</a>
+								<div class="text">Superimposition Pattern</div>
+							</div>
+							
+							<div class="mySlides2 fade">
+								<div class="numbertext">10 / 12</div>
+								<a href="/webpage/augmentation-patterns/pass-through-portal-pattern/pass-through-portal-pattern.html">
+									<img src="/webpage/augmentation-patterns/pass-through-portal-pattern/images/10.0 Pass Through Portal@2x.png" style="width:100%">
+								</a>
+								<div class="text">Pass Through Portal Pattern</div>
+							</div>
+							
+							<div class="mySlides2 fade">
+								<div class="numbertext">11 / 12</div>
+								<a href="/webpage/augmentation-patterns/segment-overlay-pattern/segment-overlay-pattern.html">
+									<img src="/webpage/augmentation-patterns/segment-overlay-pattern/images/2.0 Segment Overlay@2x.png" style="width:100%">
+								</a>
+								<div class="text">Segment Overlay Pattern</div>
+							</div>
+							
+							<div class="mySlides2 fade">
+								<div class="numbertext">12 / 12</div>
+								<a href="/webpage/augmentation-patterns/ahead-staging-pattern/ahead-staging-pattern.html">
+									<img src="/webpage/augmentation-patterns/ahead-staging-pattern/images/9.1 Ahead Staging@2x.png" style="width:100%">
+								</a>
+								<div class="text">Ahead Staging Pattern</div>
+							</div>
+							
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+			</div>
+						  
+						<!-- Dots/bullets/indicators -->
+						<div style="text-align:center">
+							<span class="dot" onclick="currentSlide(1, 2)"></span>
+							<span class="dot" onclick="currentSlide(2, 2)"></span>
+							<span class="dot" onclick="currentSlide(3, 2)"></span>
+							<span class="dot" onclick="currentSlide(4, 2)"></span>
+							<span class="dot" onclick="currentSlide(5, 2)"></span>
+							<span class="dot" onclick="currentSlide(6, 2)"></span>
+							<span class="dot" onclick="currentSlide(7, 2)"></span>
+							<span class="dot" onclick="currentSlide(8, 2)"></span>
+							<span class="dot" onclick="currentSlide(9, 2)"></span>
+							<span class="dot" onclick="currentSlide(10, 2)"></span>
+							<span class="dot" onclick="currentSlide(11, 2)"></span>
+							<span class="dot" onclick="currentSlide(12, 2)"></span>
 						</div>
 
 						<h2>How to contribute</h2>
@@ -101,6 +234,6 @@
 		<!-- Scripts -->
 		<script src="/webpage/assets/js/jquery.min.js"></script>
 		<script>$('#sidebar').load('/webpage/sidebar.html')</script>
-
+		<script src="/webpage/assets/js/caroussel.js"></script>
 	</body>
 </html>

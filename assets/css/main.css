@@ -2987,39 +2987,170 @@ button:disabled,
   max-width: 130em;
 }/*# sourceMappingURL=main.css.map */
 
-
 .news ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .news {
   display: flex;
-  align-items: left;
   flex-direction: column;
-  margin-bottom: 10px;
-  gap: 10px;
-}
-
-.news-item img {
-  max-width: 40px;
-  margin-right: 10px; /* Adjusted for space between the image and the link */
-  aspect-ratio: 1;
-}
-
-.news-item a {
-  margin-right: 10px; /* Space between the link and the paragraph */
-  text-decoration: none;
-}
-
-.news-item p {
-  margin: 0; /* To remove default margin of paragraph */
+  margin-bottom: 20px;
+  gap: 15px;
 }
 
 .news-item {
   display: flex;
-  margin-top: 10px;
   flex-direction: row;
-  align-items: flex-start;
-  gap: 2px; /* Adds a few pixels of space between elements */
+  align-items: center;
+  gap: 15px; /* More space between image and text */
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0; /* Light separator between news items */
+}
+
+.news-item img {
+  max-width: 50px; /* Increased size for better visibility */
+  margin-right: 15px; /* Increased margin for better spacing */
+  aspect-ratio: 1;
+}
+
+.news-item a {
+  font-size: 18px; /* Increased font size for emphasis */
+  font-weight: bold;
+  color: #e63946;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.news-item p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 16px; /* Make it smaller and a bit lighter to differentiate from the headline */
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+  color: #ff5f56; /* Slightly brighter color on hover */
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+/* Banner CSS */
+.banner-container {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+  font-size: large;
+}
+
+.banner-text {
+  font-size: 36px;
+  font-weight: bold;
+  z-index: 2;
+  position: relative;
+}
+
+/* Add SVG Background Decoration */
+.banner-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.4; /* So it blends nicely with the background */
+}
+
+.banner-container svg {
+  width: 100%;
+  height: auto;
 }
