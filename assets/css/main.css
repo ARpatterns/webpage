@@ -2987,43 +2987,52 @@ button:disabled,
   max-width: 130em;
 }/*# sourceMappingURL=main.css.map */
 
-
 .news ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .news {
   display: flex;
-  align-items: left;
   flex-direction: column;
-  margin-bottom: 10px;
-  gap: 10px;
-}
-
-.news-item img {
-  max-width: 40px;
-  margin-right: 10px; /* Adjusted for space between the image and the link */
-  aspect-ratio: 1;
-}
-
-.news-item a {
-  margin-right: 10px; /* Space between the link and the paragraph */
-  text-decoration: none;
-}
-
-.news-item p {
-  margin: 0; /* To remove default margin of paragraph */
+  margin-bottom: 20px;
+  gap: 15px;
 }
 
 .news-item {
   display: flex;
-  margin-top: 10px;
   flex-direction: row;
-  align-items: flex-start;
-  gap: 2px; /* Adds a few pixels of space between elements */
+  align-items: center;
+  gap: 15px; /* More space between image and text */
+  padding: 10px 0;
+  border-bottom: 1px solid #e0e0e0; /* Light separator between news items */
 }
 
+.news-item img {
+  max-width: 50px; /* Increased size for better visibility */
+  margin-right: 15px; /* Increased margin for better spacing */
+  aspect-ratio: 1;
+}
+
+.news-item a {
+  font-size: 18px; /* Increased font size for emphasis */
+  font-weight: bold;
+  color: #e63946;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+.news-item p {
+  margin: 0;
+  color: #6c757d;
+  font-size: 16px; /* Make it smaller and a bit lighter to differentiate from the headline */
+}
+
+.news-item a:hover {
+  text-decoration: underline;
+  color: #ff5f56; /* Slightly brighter color on hover */
+}
 
 /* Slideshow container */
 .slideshow-container {
