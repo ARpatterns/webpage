@@ -3119,3 +3119,38 @@ button:disabled,
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+/* Banner CSS */
+.banner-container {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+  font-size: large;
+}
+
+.banner-text {
+  font-size: 36px;
+  font-weight: bold;
+  z-index: 2;
+  position: relative;
+}
+
+/* Add SVG Background Decoration */
+.banner-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: 0.4; /* So it blends nicely with the background */
+}
+
+.banner-container svg {
+  width: 100%;
+  height: auto;
+}
