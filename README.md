@@ -15,4 +15,22 @@ TBD
 
 ## Contribution Guidelines
 
+CSS: 
+
+We're working with Sass, Scss. Have a look at the documentaion: 
+
+on macOS you can install the necessary tooling via Homebrew:
+
+```
+brew install sass/sass/sass
+
+```
+
+Run the build script to generate the new (main.css) file
+sass assets/sass/main.scss assets/css/main.css
+
+```
+
+```
+
 ## Credits
