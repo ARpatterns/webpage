@@ -111,7 +111,7 @@ body, input, select, textarea {
   color: #7f888f;
   font-family: "Open Sans", sans-serif;
   font-size: 13pt;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.65;
 }
 @media screen and (max-width: 1680px) {
@@ -149,7 +149,7 @@ a:hover strong {
 
 strong, b {
   color: #3d4449;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 em, i {
@@ -163,7 +163,7 @@ p {
 h1, h2, h3, h4, h5, h6 {
   color: #3d4449;
   font-family: "Roboto Slab", serif;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.5;
   margin: 0 0 1em 0;
 }
@@ -1423,7 +1423,7 @@ label {
   color: #3d4449;
   display: block;
   font-size: 0.9em;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 0 1em 0;
 }
 
@@ -1526,7 +1526,7 @@ input[type=radio] + label {
   cursor: pointer;
   display: inline-block;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 500;
   padding-left: 2.4em;
   padding-right: 0.75em;
   position: relative;
@@ -1779,7 +1779,7 @@ dl {
 }
 dl dt {
   display: block;
-  font-weight: 600;
+  font-weight: 700;
   margin: 0 0 1em 0;
 }
 dl dd {
@@ -1934,7 +1934,7 @@ ul.pagination li > .page {
   border-radius: 0.375em;
   display: inline-block;
   font-size: 0.8em;
-  font-weight: 600;
+  font-weight: 700;
   height: 2em;
   line-height: 2em;
   margin: 0 0.125em;
@@ -1991,7 +1991,7 @@ table td {
 table th {
   color: #3d4449;
   font-size: 0.9em;
-  font-weight: 600;
+  font-weight: 700;
   padding: 0 0.75em 0.75em 0.75em;
   text-align: left;
 }
@@ -2045,7 +2045,7 @@ button,
   display: inline-block;
   font-family: "Roboto Slab", serif;
   font-size: 0.8em;
-  font-weight: 700;
+  font-weight: 900;
   height: 3.5em;
   letter-spacing: 0.075em;
   line-height: 3.5em;
@@ -2461,6 +2461,27 @@ button:disabled,
   max-width: 130em;
 }
 
+.introduction {
+  font-weight: bold;
+  font-size: 1.2em;
+  line-height: 1.7;
+}
+
+.introduction p,
+.introduction ul,
+.introduction li {
+  font-weight: inherit;
+}
+
+.introduction strong {
+  font-weight: 800;
+}
+
+ul,
+ol {
+  margin-left: 2.5em; /* Adjust this value to set the indentation */
+}
+
 .news {
   display: flex;
   flex-direction: column;
@@ -2609,6 +2630,28 @@ button:disabled,
   bottom: 0;
 }
 
+.less-pronounced-image {
+  opacity: 0.8; /* Reduces the prominence of the images */
+  max-width: 100%; /* Makes the image responsive */
+  height: auto; /* Maintains aspect ratio */
+  max-height: 200px; /* Limits the height to keep the image smaller */
+  width: auto; /* Preserves natural width aspect */
+  display: block;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .less-pronounced-image {
+    max-width: 90%;
+    max-height: 150px; /* Smaller height on medium screens */
+  }
+}
+@media (max-width: 480px) {
+  .less-pronounced-image {
+    max-width: 100%;
+    max-height: 120px; /* Even smaller height on small screens */
+  }
+}
 /* Wrapper */
 #wrapper {
   display: -moz-flex;
