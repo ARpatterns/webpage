@@ -3144,4 +3144,39 @@ button:disabled,
   max-width: 130em;
 }
 
+.platform-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+.platform-icons .platform {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.platform-icons .platform:hover {
+  transform: scale(1.05);
+}
+.platform-icons .platform img {
+  width: 100px;
+  height: 100px;
+  min-width: 100%;
+  min-height: 100px;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 /*# sourceMappingURL=main.css.map */
