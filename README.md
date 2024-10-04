@@ -1,7 +1,5 @@
 # Community Page for AR Patterns
 
-## TODOS:
-
 ## Run Locally
 
 Steps:
@@ -27,10 +25,9 @@ brew install sass/sass/sass
 ```
 
 Run the build script to generate the new (main.css) file
-sass assets/sass/main.scss assets/css/main.css
 
 ```
-
+sass assets/sass/main.scss assets/css/main.css
 ```
 
 ## Credits
