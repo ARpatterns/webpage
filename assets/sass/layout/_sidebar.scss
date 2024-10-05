@@ -157,7 +157,7 @@
 			left: 0;
 			position: fixed;
 			top: 0;
-			z-index: _misc(z-index-base);
+			z-index: _misc(z-index-base+100);
 
 			&.inactive {
 				box-shadow: none;
