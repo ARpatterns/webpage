@@ -99,7 +99,7 @@
 			white-space: nowrap;
 			top: 0;
 			width: 6em;
-			z-index: _misc(z-index-base);
+			z-index: _misc(z-index-base+100);
 
 			&:before {
 				content: '\f0c9';
@@ -209,7 +209,8 @@
 				}
 
 				&:after {
-					background: transparentize(lighten(_palette(fg), 35), 0.25);
+					background: transparentize(lighten(_palette(fg), 80), 0.15);
+					color: _palette(fg);
 					border-radius: _size(border-radius);
 					content: '';
 					height: 3.5em;
@@ -217,6 +218,7 @@
 					position: absolute;
 					top: 1em;
 					width: 5em;
+
 				}
 			}
 		}
