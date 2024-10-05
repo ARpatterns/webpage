@@ -7,22 +7,22 @@
 /* Type */
 
 	body, input, select, textarea {
-		color: _palette(fg);
+		color: _palette(fg-bold); // Change to fg-bold
 		font-family: _font(family);
-		font-size: 13pt;
+		font-size: 16pt;
 		font-weight: _font(weight);
 		line-height: 1.65;
 
 		@include breakpoint('<=xlarge') {
-			font-size: 11pt;
+			font-size: 16pt;
 		}
 
 		@include breakpoint('<=large') {
-			font-size: 10pt;
+			font-size: 14pt;
 		}
 
 		@include breakpoint('<=xxsmall') {
-			font-size: 9pt;
+			font-size: 11pt;
 		}
 	}
 
@@ -59,7 +59,7 @@
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: _palette(fg-bold);
+		color: _palette(fg-heading);
 		font-family: _font(family-heading);
 		font-weight: _font(weight-heading);
 		line-height: 1.5;

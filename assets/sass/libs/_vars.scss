@@ -20,25 +20,26 @@
 	);
 
 // Font.
-	$font: (
-		family:				('Open Sans', sans-serif),
-		family-heading:		('Roboto Slab', serif),
-		family-fixed:		('Courier New', monospace),
-		weight:				500,
-		weight-bold:		700,
-		weight-heading:		900,
-		weight-heading-alt:	400,
-		kerning-heading:	0.075em
-	);
+$font: (
+  family:            ('Roboto', 'Arial', sans-serif),             // General font for body text
+  family-heading:    ('Roboto Slab', serif),                      // Font for headings
+  family-fixed:      ('Courier New', 'Roboto Mono', monospace),   // Font for code or fixed-width text
+  weight:            400,                                         // Regular weight for general text
+  weight-bold:       700,                                         // Bold weight for emphasis
+  weight-heading:    700,                                         // Heading font weight
+  weight-heading-alt: 600,                                        // Alternate heading weight
+  kerning-heading:   0.05em                                       // Adjusted kerning for better readability in headings
+);
 
 // Palette.
 	$palette: (
 		bg:					#ffffff,
 		bg-alt:				#f5f6f7,
-		fg:					#7f888f,
-		fg-bold:			#3d4449,
+		fg:					#000000,
+		fg-heading:			#330099,
+		fg-bold:			#060508,
 		fg-light:			#9fa3a6,
 		border:				rgba(210,215,217,0.75),
 		border-bg:			transparentize(#e6ebed, 0.75),
-		accent:				#f56a6a
+		accent:				#330099
 	);
