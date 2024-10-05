@@ -2509,18 +2509,54 @@ ol {
 .news-item a {
   font-size: 18px;
   font-weight: bold;
-  color: #e63946;
+  color: #330099;
   text-decoration: none;
   margin-right: 10px;
 }
 .news-item a:hover {
   text-decoration: underline;
-  color: #ff5f56;
+  color: #330099;
 }
 .news-item p {
   margin: 0;
   color: #6c757d;
   font-size: 16px;
+}
+@media (max-width: 768px) {
+  .news-item {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .news-item img {
+    max-width: 30px;
+    margin-right: 0;
+  }
+  .news-item a {
+    font-size: 16px;
+    min-width: 100ox;
+    max-width: 100px;
+  }
+  .news-item p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .news-item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .news-item img {
+    max-width: 20px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .news-item a {
+    font-size: 14px;
+  }
+  .news-item p {
+    font-size: 13px;
+  }
 }
 
 .slideshow-container {
@@ -2820,7 +2856,6 @@ ol {
   white-space: nowrap;
   top: 0;
   width: 6em;
-  z-index: 10000;
 }
 #sidebar .toggle:before {
   -moz-osx-font-smoothing: grayscale;
@@ -2882,7 +2917,6 @@ ol {
     left: 0;
     position: fixed;
     top: 0;
-    z-index: 10000;
   }
   #sidebar.inactive {
     box-shadow: none;
@@ -2927,7 +2961,8 @@ ol {
     z-index: 1;
   }
   #sidebar .toggle:after {
-    background: rgba(89, 89, 89, 0.75);
+    background: rgba(204, 204, 204, 0.85);
+    color: #000000;
     border-radius: 0.375em;
     content: "";
     height: 3.5em;
