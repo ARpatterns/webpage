@@ -422,20 +422,13 @@ code {
   }
 
   .eca-table table {
-      font-size: 0.9em;
+      font-size: 0.8em;
   }
 
-  .eca-table th, .eca-table td {
-      padding: 8px;
-  }
 }
 
 @media (max-width: 480px) {
   .eca-table table {
       font-size: 0.8em;
-  }
-
-  .eca-table th, .eca-table td {
-      padding: 6px;
   }
 }

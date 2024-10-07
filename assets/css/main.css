@@ -2831,18 +2831,12 @@ code {
     padding: 15px;
   }
   .eca-table table {
-    font-size: 0.9em;
-  }
-  .eca-table th, .eca-table td {
-    padding: 8px;
+    font-size: 0.8em;
   }
 }
 @media (max-width: 480px) {
   .eca-table table {
     font-size: 0.8em;
-  }
-  .eca-table th, .eca-table td {
-    padding: 6px;
   }
 }
 /* Wrapper */
