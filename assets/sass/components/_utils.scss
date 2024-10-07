@@ -9,22 +9,32 @@
 }
 
 .introduction {
-  font-weight: 500 ; // or font-weight: 700;
-  font-size: 20pt;    // Increases font size by 20%
-  line-height: 1.5;    // Adjusts line height for readability
+  font-weight: 500; /* Normalized weight for mobile */
+  font-size: 20pt; /* Desktop size */
+  line-height: 1.5; /* Consistent across all devices */
+}
 
+.introduction p,
+.introduction ul,
+.introduction li {
+  font-weight: inherit; /* Retains parent styles */
+}
+
+.introduction strong {
+  font-weight: 800; /* Makes the text bolder */
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+  .introduction {
+    font-size: 15pt; /* Reduced font size for readability */
+    line-height: 1.4; /* Slightly tighter line height for mobile */
   }
-  
-  .introduction p,
-  .introduction ul,
-  .introduction li {
-  font-weight: inherit;
-  }
-  
+
   .introduction strong {
-  font-weight: 800;
+    font-weight: 700; /* Reduced weight for better readability on mobile */
   }
-
+}
   ul,
   ol {
     margin-left: 0.0em; /* Adjust this value to set the indentation */
