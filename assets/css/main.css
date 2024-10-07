@@ -2760,8 +2760,6 @@ ol {
   margin: 0 auto;
   background: #fff;
   padding: 20px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
 }
 
 .eca-diagram h2 {
@@ -2770,9 +2768,8 @@ ol {
 }
 
 .eca-table {
-  margin-top: 20px;
   overflow-x: auto;
-  max-width: px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -2781,39 +2778,43 @@ ol {
   width: 100%;
   max-width: 800px;
   border-collapse: collapse;
-  margin-bottom: 20px;
-  border: 2px solid #000;
 }
 
-.eca-table th, .eca-table td {
-  border: 1px solid #000;
-  padding: 10px;
-  text-align: center;
-  vertical-align: middle;
+.spacer-row td {
+  height: 4px; /* Height of the spacer between the header and content */
+  border: none; /* No borders for the spacer row */
+  background-color: transparent; /* Optional: make the row invisible */
 }
 
 .eca-table th {
+  border: 1px solid #000;
+  text-align: center;
+  vertical-align: middle;
   background-color: #fff;
-  color: #330099;
+  color: black;
   font-weight: bold;
+}
+
+.eca-table td {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #fff;
+  color: black;
+  border: none;
+  padding: 0px;
+}
+
+.eca-table tbody {
+  background-color: #b0b0b0;
+  border: none;
 }
 
 .reaction {
+  display: block;
+  margin-inline-start: 5px;
+  margin-inline-end: 0px;
   text-align: left;
-  font-style: italic;
-  padding-left: 15px;
-  background-color: #f9f9f9;
-  border-left: 5px solid #b0b0b0; /* Gray bar for reaction lines */
   position: relative;
-  padding-left: 25px;
-}
-
-.reaction:before {
-  content: "|";
-  position: absolute;
-  left: 10px;
-  color: #b0b0b0;
-  font-weight: bold;
 }
 
 code {
