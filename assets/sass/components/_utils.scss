@@ -345,7 +345,7 @@
 
 .eca-diagram {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 0;
   background: #fff;
   padding: 20px;
 
@@ -359,8 +359,6 @@
 .eca-table {
   overflow-x: auto;
   max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .eca-table table {
