@@ -1,284 +1,294 @@
 #header-img {
-    display: flex;
-    justify-content: center;
-  
-    img {
-      width: 100%;
-      max-width: 130em;
-    }
-  }
+  display: flex;
+  justify-content: center;
 
-  .introduction {
-    font-weight: bold; // or font-weight: 700;
-    font-size: 1.2em;    // Increases font size by 20%
-    line-height: 1.7;    // Adjusts line height for readability
-
-    }
-    
-    .introduction p,
-    .introduction ul,
-    .introduction li {
-    font-weight: inherit;
-    }
-    
-    .introduction strong {
-    font-weight: 800;
-    }
-
-    ul,
-    ol {
-      margin-left: 2.5em; /* Adjust this value to set the indentation */
-    }
-
-    .news {
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-    
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 20px;
-      gap: 15px;
-    
-      &-item {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 15px; // More space between image and text
-        padding: 10px 0;
-        border-bottom: 1px solid #e0e0e0; // Light separator between news items
-    
-        img {
-          max-width: 50px; // Increased size for better visibility
-          margin-right: 15px; // Increased margin for better spacing
-          aspect-ratio: 1;
-        }
-    
-        a {
-          font-size: 18px; // Increased font size for emphasis
-          font-weight: bold;
-          color: #330099;
-          text-decoration: none;
-          margin-right: 10px;
-    
-          &:hover {
-            text-decoration: underline;
-            color: #330099; // Slightly brighter color on hover
-          }
-        }
-    
-        p {
-          margin: 0;
-          color: #6c757d;
-          font-size: 16px; // Make it smaller and a bit lighter to differentiate from the headline
-        }
-      }
-    
-      // Media queries for responsiveness
-      @media (max-width: 768px) {
-        &-item {
-          flex-direction: row; // Stack content vertically on medium devices
-          align-items: flex-start; // Align items to the left for readability
-          gap: 10px; // Reduce gap for smaller devices
-    
-          img {
-            max-width: 30px; // Make image slightly larger for better visibility
-            margin-right: 0; // Remove margin to ensure better alignment
-          }
-    
-          a {
-            font-size: 16px; // Reduce headline font size for smaller screens
-            min-width: 100ox; // Limit width to prevent overflow
-            max-width: 100px; // Limit width to prevent overflow
-          }
-    
-          p {
-            font-size: 14px; // Reduce paragraph font size
-          }
-        }
-      }
-    
-      @media (max-width: 480px) {
-        &-item {
-          flex-direction: row; // Stack everything vertically on small devices
-          align-items: flex-start; // Align items to the left
-    
-          img {
-            max-width: 20px; // Slightly smaller image for very small screens
-            margin-right: 0;
-            margin-bottom: 10px; // Add spacing below the image for better alignment
-          }
-    
-          a {
-            font-size: 14px; // Further reduce font size for very small devices
-          }
-    
-          p {
-            font-size: 13px; // Adjust paragraph font size for smaller screens
-          }
-        }
-      }
-    }
-  // Slideshow container
-  .slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-  }
-  
-  // Hide the images by default
-  .mySlides {
-    display: none;
-  }
-  
-  // Next & previous buttons
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  
-    &.next {
-      right: 0;
-      border-radius: 3px 0 0 3px;
-    }
-  
-    &:hover {
-      background-color: rgba(0, 0, 0, 0.8);
-    }
-  }
-  
-  // Caption text
-  .text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
+  img {
     width: 100%;
-    text-align: center;
+    max-width: 130em;
   }
+}
+
+.introduction {
+  font-weight: 500; /* Normalized weight for mobile */
+  font-size: 20pt; /* Desktop size */
+  line-height: 1.5; /* Consistent across all devices */
+}
+
+.introduction p,
+.introduction ul,
+.introduction li {
+  font-weight: inherit; /* Retains parent styles */
+}
+
+.introduction strong {
+  font-weight: 800; /* Makes the text bolder */
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+  .introduction {
+    font-size: 15pt; /* Reduced font size for readability */
+    line-height: 1.4; /* Slightly tighter line height for mobile */
+  }
+
+  .introduction strong {
+    font-weight: 700; /* Reduced weight for better readability on mobile */
+  }
+}
+  ul,
+  ol {
+    margin-left: 0.0em; /* Adjust this value to set the indentation */
+  }
+
+  .news {
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
   
-  // Number text (1/3 etc)
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    gap: 15px;
+  
+    &-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px; // More space between image and text
+      padding: 10px 0;
+      border-bottom: 1px solid #e0e0e0; // Light separator between news items
+  
+      img {
+        max-width: 50px; // Increased size for better visibility
+        margin-right: 15px; // Increased margin for better spacing
+        aspect-ratio: 1;
+      }
+  
+      a {
+        font-size: 18px; // Increased font size for emphasis
+        font-weight: bold;
+        color: #330099;
+        text-decoration: none;
+        margin-right: 10px;
+  
+        &:hover {
+          text-decoration: underline;
+          color: #330099; // Slightly brighter color on hover
+        }
+      }
+  
+      p {
+        margin: 0;
+        color: #6c757d;
+        font-size: 16px; // Make it smaller and a bit lighter to differentiate from the headline
+      }
+    }
+  
+    // Media queries for responsiveness
+    @media (max-width: 768px) {
+      &-item {
+        flex-direction: row; // Stack content vertically on medium devices
+        align-items: flex-start; // Align items to the left for readability
+        gap: 10px; // Reduce gap for smaller devices
+  
+        img {
+          max-width: 30px; // Make image slightly larger for better visibility
+          margin-right: 0; // Remove margin to ensure better alignment
+        }
+  
+        a {
+          font-size: 16px; // Reduce headline font size for smaller screens
+          min-width: 100ox; // Limit width to prevent overflow
+          max-width: 100px; // Limit width to prevent overflow
+        }
+  
+        p {
+          font-size: 14px; // Reduce paragraph font size
+        }
+      }
+    }
+  
+    @media (max-width: 480px) {
+      &-item {
+        flex-direction: row; // Stack everything vertically on small devices
+        align-items: flex-start; // Align items to the left
+  
+        img {
+          max-width: 20px; // Slightly smaller image for very small screens
+          margin-right: 0;
+          margin-bottom: 10px; // Add spacing below the image for better alignment
+        }
+  
+        a {
+          font-size: 14px; // Further reduce font size for very small devices
+        }
+  
+        p {
+          font-size: 13px; // Adjust paragraph font size for smaller screens
+        }
+      }
+    }
+  }
+// Slideshow container
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+// Hide the images by default
+.mySlides {
+  display: none;
+}
+
+// Next & previous buttons
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+  &.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+// Caption text
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+// Number text (1/3 etc)
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+// The dots/bullets/indicators
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+
+  &.active, &:hover {
+    background-color: #717171;
+  }
+}
+
+// Fading animation
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// Banner CSS
+.banner-container {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+  font-size: large;
+
+  .banner-text {
+    font-size: 36px;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+  }
+
+  .banner-decoration {
     position: absolute;
     top: 0;
-  }
-  
-  // The dots/bullets/indicators
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  
-    &.active, &:hover {
-      background-color: #717171;
-    }
-  }
-  
-  // Fading animation
-  .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  
-  @keyframes fade {
-    from {
-      opacity: 0.4;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  // Banner CSS
-  .banner-container {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 50px 0;
-    position: relative;
-    overflow: hidden;
-    font-size: large;
-  
-    .banner-text {
-      font-size: 36px;
-      font-weight: bold;
-      z-index: 2;
-      position: relative;
-    }
-  
-    .banner-decoration {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.4; // So it blends nicely with the background
+
+    svg {
+      width: 100%;
+      height: auto;
       bottom: 0;
-      z-index: 1;
-      opacity: 0.4; // So it blends nicely with the background
-  
-      svg {
-        width: 100%;
-        height: auto;
-        bottom: 0;
-      }
     }
   }
+}
 
 
+.less-pronounced-image {
+  opacity: 0.8;           /* Reduces the prominence of the images */
+  max-width: 100%;        /* Makes the image responsive */
+  height: auto;           /* Maintains aspect ratio */
+  max-height: 200px;      /* Limits the height to keep the image smaller */
+  width: auto;            /* Preserves natural width aspect */
+  display: block;
+  //margin: 1em auto;       /* Centers the images */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
   .less-pronounced-image {
-    opacity: 0.8;           /* Reduces the prominence of the images */
-    max-width: 100%;        /* Makes the image responsive */
-    height: auto;           /* Maintains aspect ratio */
-    max-height: 200px;      /* Limits the height to keep the image smaller */
-    width: auto;            /* Preserves natural width aspect */
-    display: block;
-    //margin: 1em auto;       /* Centers the images */
+    max-width: 90%;
+    max-height: 150px;    /* Smaller height on medium screens */
   }
-  
-  /* Media Queries for Responsiveness */
-  @media (max-width: 768px) {
-    .less-pronounced-image {
-      max-width: 90%;
-      max-height: 150px;    /* Smaller height on medium screens */
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .less-pronounced-image {
-      max-width: 100%;
-      max-height: 120px;    /* Even smaller height on small screens */
-    }
-  }
+}
 
-  .image {
-    border-radius: 0.5em;
-    border: 1px solid #330099;
-    box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, .2);
+@media (max-width: 480px) {
+  .less-pronounced-image {
+    max-width: 100%;
+    max-height: 120px;    /* Even smaller height on small screens */
   }
+}
 
-  .image p {
-    font-size: 0.8em;
-    color: #330099;
-    text-align: center;
-    margin: 0;
-    padding: 0.5em;
-  }
+.image {
+  border-radius: 0.5em;
+  border: 1px solid #330099;
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, .2);
+}
+
+.image p {
+  font-size: 0.8em;
+  color: #330099;
+  text-align: center;
+  margin: 0;
+  padding: 0.5em;
+}
