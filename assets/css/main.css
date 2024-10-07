@@ -201,21 +201,21 @@ h6 {
 
 @media screen and (max-width: 1680px) {
   h1 {
-    font-size: 3.5em;
+    font-size: 2em;
   }
 }
 @media screen and (max-width: 980px) {
   h1 {
-    font-size: 3.25em;
+    font-size: 1.75em;
   }
 }
 @media screen and (max-width: 736px) {
   h1 {
-    font-size: 2em;
+    font-size: 1.75em;
     line-height: 1.4;
   }
   h2 {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 }
 sub {
@@ -2712,6 +2712,131 @@ ol {
   padding: 0.5em;
 }
 
+/* Image styles for better responsiveness */
+.less-pronounced-image {
+  width: 100%; /* Allow images to fill the container width */
+  max-width: 300px; /* Limit the maximum width to prevent images from getting too large */
+  height: auto; /* Maintain aspect ratio */
+  margin: 1em auto; /* Center the images */
+  opacity: 0.9; /* Slightly less opacity for subtle effect */
+  display: block; /* Ensures the image occupies full line */
+  border-radius: 0.5em; /* Slightly round the corners */
+  border: 1px solid #ddd; /* Adds a light border for contrast */
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.15); /* Soft shadow for better visibility */
+}
+
+/* Media Queries for Responsiveness */
+/* Tablets and small screens */
+@media (max-width: 768px) {
+  .less-pronounced-image {
+    max-width: 300px; /* Make images smaller for medium-sized screens */
+    max-height: 250px; /* Limit the height to keep it manageable */
+  }
+}
+/* Mobile devices */
+@media (max-width: 480px) {
+  .less-pronounced-image {
+    max-width: 300px; /* Use the full width of smaller screens */
+    max-height: 200px; /* Further reduce height for smaller screens */
+  }
+}
+/* Additional adjustments to ensure consistency */
+.image {
+  border-radius: 0.5em;
+  border: 1px solid #330099;
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.image p {
+  font-size: 0.8em;
+  color: #330099;
+  text-align: center;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.eca-diagram {
+  max-width: 800px;
+  margin: 0;
+  background: #fff;
+  padding: 20px;
+}
+
+.eca-diagram h2 {
+  text-align: center;
+  color: #330099;
+}
+
+.eca-table {
+  overflow-x: auto;
+  max-width: 800px;
+}
+
+.eca-table table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+}
+
+.spacer-row td {
+  height: 4px; /* Height of the spacer between the header and content */
+  border: none; /* No borders for the spacer row */
+  background-color: transparent; /* Optional: make the row invisible */
+}
+
+.eca-table th {
+  border: 1px solid #000;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #fff;
+  color: black;
+  font-weight: bold;
+}
+
+.eca-table td {
+  text-align: center;
+  vertical-align: middle;
+  background-color: #fff;
+  color: black;
+  border: none;
+  padding: 0px;
+}
+
+.eca-table tbody {
+  background-color: #b0b0b0;
+  border: none;
+}
+
+.reaction {
+  display: block;
+  margin-inline-start: 5px;
+  margin-inline-end: 0px;
+  text-align: left;
+  position: relative;
+}
+
+code {
+  background-color: #f0f0f0;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Media Queries for Responsiveness */
+/* Tablet and Mobile Adjustments */
+@media (max-width: 768px) {
+  .eca-diagram {
+    padding: 15px;
+  }
+  .eca-table table {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 480px) {
+  .eca-table table {
+    font-size: 0.8em;
+  }
+}
 /* Wrapper */
 #wrapper {
   display: -moz-flex;

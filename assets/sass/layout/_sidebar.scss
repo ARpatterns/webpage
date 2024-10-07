@@ -99,7 +99,7 @@
 			white-space: nowrap;
 			top: 0;
 			width: 6em;
-			z-index: _misc(z-index-base+100);
+			z-index: _misc(z-index-base+10000);
 
 			&:before {
 				content: '\f0c9';
