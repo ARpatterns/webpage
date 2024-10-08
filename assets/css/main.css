@@ -1743,6 +1743,26 @@ div.two-column-wrapper .image img {
   width: 100%;
 }
 
+div.two-column-wrapper-small {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+}
+div.two-column-wrapper-small .image {
+  display: block;
+  margin: 0 0 3em 0;
+  width: 100%;
+}
+@media screen and (min-width: 737px) {
+  div.two-column-wrapper-small .image {
+    width: 48%;
+  }
+}
+div.two-column-wrapper-small .image img {
+  width: 100%;
+}
+
 /* List */
 ol {
   list-style: decimal;
