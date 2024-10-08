@@ -430,3 +430,38 @@ code {
       font-size: 0.8em;
   }
 }
+
+.diagram-image1 {
+  max-width: 252px;         /* Set the maximum width to 200px */
+  width: 100%;              /* Make the image responsive by adjusting to its container */
+  height: auto;             /* Maintain aspect ratio */
+  display: block;           /* Ensure the image is treated as a block element */
+}
+
+@media (max-width: 480px) {
+  .diagram-image {
+      max-width: 100%;      /* For very small screens, allow the image to go full width */
+  }
+}
+
+
+.diagram-image2 {
+  max-width: 420px;         /* Set the maximum width to 200px */
+  width: 100%;              /* Make the image responsive by adjusting to its container */
+  height: auto;             /* Maintain aspect ratio */
+  display: block;           /* Ensure the image is treated as a block element */
+}
+
+.diagram-image3 {
+  max-width: 510px;         /* Set the maximum width to 200px */
+  width: 100%;              /* Make the image responsive by adjusting to its container */
+  height: auto;             /* Maintain aspect ratio */
+  display: block;           /* Ensure the image is treated as a block element */
+}
+
+.diagram-image4 {
+  max-width: 484px;         /* Set the maximum width to 200px */
+  width: 100%;              /* Make the image responsive by adjusting to its container */
+  height: auto;             /* Maintain aspect ratio */
+  display: block;           /* Ensure the image is treated as a block element */
+}
