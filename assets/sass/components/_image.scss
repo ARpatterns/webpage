@@ -106,3 +106,25 @@
 			}
 		}
 	}
+
+	div.two-column-wrapper-small{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 800px;
+		
+		.image {
+			display: block;
+			
+			margin: 0 0 (_size(element-margin) * 1.5) 0;
+			width: 100%;
+			@include breakpoint('>=medium') {
+				width: 48%;
+			}
+			
+			img {
+				width: 100%;
+			}
+		}
+	}
+

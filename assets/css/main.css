@@ -1743,6 +1743,26 @@ div.two-column-wrapper .image img {
   width: 100%;
 }
 
+div.two-column-wrapper-small {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 800px;
+}
+div.two-column-wrapper-small .image {
+  display: block;
+  margin: 0 0 3em 0;
+  width: 100%;
+}
+@media screen and (min-width: 737px) {
+  div.two-column-wrapper-small .image {
+    width: 48%;
+  }
+}
+div.two-column-wrapper-small .image img {
+  width: 100%;
+}
+
 /* List */
 ol {
   list-style: decimal;
@@ -2680,16 +2700,17 @@ ol {
   opacity: 0.8; /* Reduces the prominence of the images */
   max-width: 100%; /* Makes the image responsive */
   height: auto; /* Maintains aspect ratio */
-  max-height: 200px; /* Limits the height to keep the image smaller */
+  max-height: 206px; /* Limits the height to keep the image smaller */
   width: auto; /* Preserves natural width aspect */
   display: block;
+  margin: 2.5em; /* Centers the images */
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   .less-pronounced-image {
     max-width: 90%;
-    max-height: 150px; /* Smaller height on medium screens */
+    max-height: 230px; /* Smaller height on medium screens */
   }
 }
 @media (max-width: 480px) {
